@@ -12,7 +12,7 @@ You can filter race classes, event types. Default all. Eg:
 
 **--filters "sbk - Race 1,ssp - Race,ssp - Qualifying"**
 
-## Turkish
+## Türkçe
 Bu script worldsbk sitesinden yarış takvimini alıp ics takvim formatına çevirir, bu format iOS, Android, Outlook'a import edilebilir.
 
 Çıktı almak istediğiniz yarış pistlerini belirtebilirsiniz. Varsayılan hepsi. Örnek:
