@@ -9,7 +9,7 @@ import argparse
 import iso8601
 
 
-print u"\nWSBK iCalendar exporter by Sinan Çetinkaya (sinancetinkaya35@gmail.com)\n"
+print u"\nWSBK iCalendar exporter by Sinan Çetinkaya\n"
 parser = argparse.ArgumentParser(description=u'WSBK iCalendar exporter by Sinan Çetinkaya (sinancetinkaya35@gmail.com)')
 parser.add_argument('--tracks', help=u'You can specify the race tracks you want to export, default all / Çıktı almak istediğiniz yarış pistlerini belirtebilirsiniz. Varsayılan hepsi. Eg/örnek: --tracks "Aragon,Assen,Imola"')
 parser.add_argument('--filters', help=u'You can filter race classes, event types. Default all / Yarış sınıflarını ve etkinlik türlerini belirtebilirsiniz. Varsayılan hepsi. Eg/örnek: --filters "sbk - Race 1,ssp - Race,ssp - Qualifying"')
