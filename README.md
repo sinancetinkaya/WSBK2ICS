@@ -24,4 +24,4 @@ Yarış sınıflarını ve etkinlik türlerini belirtebilirsiniz. Varsayılan he
 **--filters "sbk - Race 1,ssp - Race,ssp - Qualifying"**
 
 
-**https://drive.google.com/folderview?id=0B1PNkS9SaGXtfk1fZFZBQVJpQzlpdXYyLXctbjBtaHN0aDJkTmh4MFY1S2h5TFYwUVNlaXM&usp=sharing**
+**Download http://goo.gl/ssJNT0**
