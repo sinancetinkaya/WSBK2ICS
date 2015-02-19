@@ -1,5 +1,5 @@
-## WSBK2ICS
-# English
+# WSBK2ICS
+## English
 World Superbike iCalendar(ics) exporter
 
 This script scraps current year's calendar events from worldsbk website to ics calendar format which can be imported iOS, Android, Outlook etc.
@@ -12,7 +12,7 @@ You can filter race classes, event types. Default all. Eg:
 
 **--filters "sbk - Race 1,ssp - Race,ssp - Qualifying"**
 
-# Turkish
+## Turkish
 Bu script worldsbk sitesinden yarış takvimini alıp ics takvim formatına çevirir, bu format iOS, Android, Outlook'a import edilebilir.
 
 Çıktı almak istediğiniz yarış pistlerini belirtebilirsiniz. Varsayılan hepsi. Örnek:
