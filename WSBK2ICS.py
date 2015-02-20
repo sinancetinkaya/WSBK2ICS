@@ -44,7 +44,6 @@ if tracks=='*':
         tracks.append(trackEach.a['href'].split('/')[3]) #her bir yarışın href'ini '/' ile böl ve 3. öğeyi al = pist adı
                             
 
-f = open('WSBK.ics', 'wb')
 year = date.today().year.__str__()
 for track in tracks:
     url = site +urllib.quote('/en/event/'+ track + '/' + year)
@@ -87,5 +86,6 @@ for track in tracks:
             print "%s, %s, %s" %(DTSTART.strftime('%Y-%m-%d %H:%M') , track, eName)
 
 
+f = open('WSBK.ics', 'wb')
 f.write(cal.to_ical())
 f.close()
