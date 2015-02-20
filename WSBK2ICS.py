@@ -9,10 +9,11 @@ import argparse
 import iso8601
 
 
-print u"\nWSBK iCalendar exporter by Sinan Çetinkaya\n"
-parser = argparse.ArgumentParser(description=u'WSBK iCalendar exporter by Sinan Çetinkaya')
+print u"\nWSBK iCalendar exporter by Sinan Çetinkaya (sinancetinkaya35@gmail.com)\n"
+parser = argparse.ArgumentParser(description=u'WSBK iCalendar exporter by Sinan Çetinkaya (sinancetinkaya35@gmail.com)')
 parser.add_argument('--tracks', help=u'You can specify the race tracks you want to export, default all / Çıktı almak istediğiniz yarış pistlerini belirtebilirsiniz. Varsayılan hepsi. Eg/örnek: --tracks "Aragon,Assen,Imola"')
 parser.add_argument('--filters', help=u'You can filter race classes, event types. Default all / Yarış sınıflarını ve etkinlik türlerini belirtebilirsiniz. Varsayılan hepsi. Eg/örnek: --filters "sbk - Race 1,ssp - Race,ssp - Qualifying"')
+parser.add_argument('--output', help=u'You can specify output file name. Default WSBK.ics / Çıktı dosya ismini belirtebilirsiniz. Varsayılan WSBK.ics Eg/örnek: --output "filename.ics"')
 args = vars(parser.parse_args())
 
 if args['tracks'] != None:
@@ -24,6 +25,12 @@ if args['filters'] != None:
     filters = args['filters'].split(',')
 else:
     filters = '*'
+
+if args['output'] != None:
+    output = args['output']
+else:
+    output = 'WSBK.ics'
+
 site = "http://www.worldsbk.com"
 
 cal = Calendar()
@@ -86,6 +93,6 @@ for track in tracks:
             print "%s, %s, %s" %(DTSTART.strftime('%Y-%m-%d %H:%M') , track, eName)
 
 
-f = open('WSBK.ics', 'wb')
+f = open(output, 'wb')
 f.write(cal.to_ical())
 f.close()
